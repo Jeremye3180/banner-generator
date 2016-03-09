@@ -6,9 +6,12 @@
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>   
     $(function(){
-        
-        
-        
+     
+       
+        $('button').click(function(){
+             var name = $('#name').val();
+          alert('You are' + name);
+        });
         
     });
     
@@ -16,6 +19,13 @@
     </script>
   </head>
   <body>
+    <div>
+  Name: <input type="text"><br><br>
+  Message: <input tupe="text"><br><br>
+  Color:  <input type="text"><br><br>
+  Font-Size: <input type="text">
+  <button>Make Banner</button>
   
+  </div>
   </body>
 </html>
