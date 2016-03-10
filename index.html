@@ -10,28 +10,28 @@
     $(function() {
       $('button').click(function() {
         var name = $('#name').val();
-        alert('You are ' + name);
+          $('h1').html(name);
       });
 
       $('button').click(function() {
         var message = $('#message').val();
-        alert(message);
+      $('h2').html(message);
       });
       $('button').click(function() {
       var color = $('#color').val(); $('div').css('background-color', color);
-      alert("your color is " + color)
+     
       });
+      
     });
-    $('button').click(function() {
-    //var fsize = $('#fsize').val(); $('div').css('font-size', fsize );
-  
-      });
+    
   </script>
   <style> 
   
-.Div{
+.div{
     
-    display: none;
+    width: 300px;
+    
+    height: 300px;
     
     
   }
@@ -50,9 +50,7 @@
     <br>
     <br> Color:
     <input type="text" id='color'>
-    <br>
-    <br> font-size:
-    <input type="text" id='fsize'>
+    <br><br>
     <button>Make Banner</button>
 
 
@@ -60,8 +58,8 @@
   
   
 
-  <h1>Hello world</h1>
-  
+  <h1></h1>
+  <h2></h2>
   
 </div>
   
