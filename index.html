@@ -10,20 +10,24 @@
     $(function() {
       $('button').click(function() {
         var name = $('#name').val();
-          $('h1').html(name);
+          $('h2').html(name);
       });
 
       $('button').click(function() {
         var message = $('#message').val();
-      $('h2').html(message);
+      $('h1').html(message);
       });
       $('button').click(function() {
       var color = $('#color').val(); $('div').css('background-color', color);
      
       });
+       $('button').click(function() {
+      $('#form').hide();
+     
       
     });
     
+    });
   </script>
   <style> 
   
@@ -41,7 +45,7 @@
 </head>
 
 <body>
-
+<div id='form'>
     Name:
     <input type="text" id="name" >
     <br>
@@ -52,14 +56,14 @@
     <input type="text" id='color'>
     <br><br>
     <button>Make Banner</button>
+</div>
 
-
-<div>
+<div id='finale'>
   
   
 
-  <h1></h1>
   <h2></h2>
+  <h1></h1>
   
 </div>
   
