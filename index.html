@@ -8,18 +8,22 @@
   
   <script>
     $(function() {
+      ////When button is clicked, the name will show on the banner according to user input
       $('button').click(function() {
         var name = $('#name').val();
           $('h2').html(name);
       });
 
+// //When button is clicked, the  the text will show on the banner according to user input
       $('button').click(function() {
         var message = $('#message').val();
       $('h1').html(message);
       });
+      //When button is clicked, the color of the text will change according to user input
       $('button').click(function() {
       var color = $('#color').val(); $('div').css('color', color);
       });
+      //when the button is pressed, the input boxes will fade and the banner will slide up.
        $('button').click(function() {
       $('#form').slideUp(2000);
      
@@ -44,6 +48,7 @@
 </head>
 
 <body>
+  <!--Defines the input types  for the name, message, and color of the banner text-->
 <div id='form'>
     Name:
     <input type="text" id="name" >
@@ -61,9 +66,9 @@
 <div id='finale'>
   
   
-
-  <h2></h2>
-  <h1></h1>
+<!--This is where the html will show on the banner-->
+  <h2></h2><!--This is where the name will go-->
+  <h1></h1><!--This is where the message will go-->
   
 </div>
   
